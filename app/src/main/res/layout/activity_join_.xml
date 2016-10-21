@@ -14,62 +14,63 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="number|numberDecimal"
         android:ems="10"
-        android:layout_marginTop="25dp"
-        android:id="@+id/editText"
-        android:layout_alignParentTop="true"
+        android:id="@+id/IP"
+        android:textStyle="normal|bold"
+        android:layout_alignBottom="@+id/textView4"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:textStyle="normal|bold" />
-
-    <TextView
-        android:text="IP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="51dp"
-        android:id="@+id/textView4"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:layout_below="@+id/editText"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3"
-        android:textStyle="normal|bold" />
+        android:hint="IP address" />
 
     <Button
         android:text="Ingresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="93dp"
         android:id="@+id/button"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:background="@color/colorPrimary"
-        android:layout_below="@+id/editText2"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:elevation="16dp" />
+        android:elevation="16dp"
+        android:layout_below="@+id/IP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp" />
 
     <TextView
         android:text="ID Cliente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="14dp"
-        android:layout_marginStart="14dp"
         android:id="@+id/textView3"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:layout_alignTop="@+id/editText"
+        android:textStyle="normal|bold"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textStyle="normal|bold" />
+        android:layout_above="@+id/textView4"
+        android:layout_alignTop="@+id/USER"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <TextView
+        android:text="IP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/USER" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="text|textCapCharacters"
         android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_alignBottom="@+id/textView4"
-        android:layout_toRightOf="@+id/textView3"
-        android:layout_toEndOf="@+id/textView3"
-        android:textStyle="normal|bold" />
+        android:layout_marginTop="14dp"
+        android:id="@+id/USER"
+        android:hint="Username"
+        android:singleLine="true"
+        android:selectAllOnFocus="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
