@@ -118,7 +118,7 @@ public class Speech extends AppCompatActivity {
             public void onItemClick(AdapterView<?> paret, View viewCLicked, int position, long id)
             {
                 TextView textView = (TextView) viewCLicked;
-                String message = "selection :"+ position +" platillo"+ textView.getText().toString();
+                String message = "Platillo"+ textView.getText().toString()+"Precio de su compra:"+Meme2.get(position);
                 Toast.makeText(Speech.this, message, Toast.LENGTH_SHORT).show();
                 PAGAR = Meme2.get(position);
 
@@ -128,8 +128,8 @@ public class Speech extends AppCompatActivity {
                     a.put("clienteNombre",Cliente.NOM);
                     a.put("priori",Cliente.priori);
                     a.put("Mesa", Reader.Mesa);
-                conect.conect(Cliente.ip,"8080","HacerOrden");
-                conect.post(a);
+                    conect.conect(Cliente.ip,"8080","HacerOrden");
+                    conect.post(a);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
