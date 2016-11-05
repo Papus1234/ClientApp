@@ -8,28 +8,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/ingreso"
     tools:context="com.example.james.customer1.Cliente">
 
-    <Button
-        android:text="Ingresar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_marginTop="68dp"
-        android:layout_below="@+id/Usuario"
-        android:layout_centerHorizontal="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="IdentificationPort"
-        android:ems="10"
-        android:id="@+id/IP"
-        android:layout_below="@+id/Usuario"
-        android:layout_alignLeft="@+id/Usuario"
-        android:layout_alignStart="@+id/Usuario"
-        android:layout_marginTop="17dp" />
 
     <TextView
         android:text="Restaurante Nosotros"
@@ -51,4 +33,38 @@
         android:id="@+id/Usuario"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="IdentificationPort"
+        android:ems="10"
+        android:id="@+id/IP"
+        android:layout_below="@+id/Usuario"
+        android:layout_alignLeft="@+id/Usuario"
+        android:layout_alignStart="@+id/Usuario"
+        android:layout_marginTop="17dp" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="Prioridad"
+        android:ems="10"
+        android:id="@+id/Prioridad"
+        android:layout_below="@+id/IP"
+        android:layout_alignLeft="@+id/IP"
+        android:layout_alignStart="@+id/IP"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:text="Ingresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ingresar"
+        android:layout_below="@+id/IP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp" />
 </RelativeLayout>

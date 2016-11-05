@@ -10,15 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.james.customer1.Speech">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="VOICE"
-        android:id="@+id/VOICE"
-        android:onClick="onButtonClick"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
     <TextView
         android:text="@string/emptydtr"
         android:layout_width="wrap_content"
@@ -27,6 +18,47 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="34dp"
         android:id="@+id/TVResult" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOICE"
+        android:id="@+id/VOICE"
+        android:onClick="onButtonClick"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/MENU"
+        android:layout_below="@+id/TVResult"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Get Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:layout_alignTop="@+id/VOICE"
+        android:layout_toRightOf="@+id/VOICE"
+        android:layout_toEndOf="@+id/VOICE"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:id="@+id/Test" />
+
+    <Button
+        android:text="PAGAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/VOICE"
+        android:layout_toLeftOf="@+id/VOICE"
+        android:onClick="onButtonClick"
+        android:layout_toStartOf="@+id/VOICE"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/PAGAR" />
 
 
 </RelativeLayout>

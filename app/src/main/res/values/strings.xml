@@ -2,4 +2,5 @@
     <string name="app_name">Customer1</string>
     <string name="emptystr" />
     <string name="emptydtr" />
+    <string name="title_activity_pagos">Pagos</string>
 </resources>
